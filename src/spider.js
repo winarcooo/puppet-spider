@@ -28,7 +28,6 @@ const fs = require('fs');
   }
 
   const browser = await puppeteer.launch();
-  
   const firstUrl = `https://store.steampowered.com/search/?specials=1&page=1`;
   const GameList = await extractGameList(firstUrl)
 
